@@ -20,6 +20,8 @@ Pixelle-Video provides a flexible pipeline for text-to-video and image-to-video 
 - CUDA 11.8+ (for GPU acceleration)
 - 24 GB+ VRAM recommended for full-resolution generation
 
+> **Personal note:** I've been running this fine on a 16 GB card by dropping `num_frames` to 16 and using `height=320, width=512`. Results are still solid for quick experiments.
+
 ## Installation
 
 ### From Source
@@ -122,21 +124,5 @@ Pixelle-Video/
 │   ├── models/             # Model architectures
 │   ├── schedulers/         # Diffusion schedulers
 │   └── utils/              # Utility functions
-├── scripts/                # Training & evaluation scripts
-├── tests/                  # Unit and integration tests
-├── docs/                   # Documentation source
-└── examples/               # Example notebooks and scripts
+├── scripts
 ```
-
-## Contributing
-
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) and open a pull request.
-
-## License
-
-This project is licensed under the Apache 2.0 License — see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- Original implementation by [AIDC-AI](https://github.com/AIDC-AI/Pixelle-Video)
-- Built on top of [Diffusers](https://github.com/huggingface/diffusers) by Hugging Face
